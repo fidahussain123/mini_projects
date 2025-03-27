@@ -32,14 +32,45 @@
             <section class="exam" id="exam">
                 <h2>Multiple Choice Questions</h2>
                 <form class="mcq-section">
-                    <p>1. What is 2 + 2?</p>
-                    <label><input type="radio" name="q1" value="3"> 3</label>
-                    <label><input type="radio" name="q1" value="4"> 4</label>
-                    <label><input type="radio" name="q1" value="5"> 5</label>
+                    <!-- Question 1 (Existing) -->
+                    
+            
+                    <!-- Question 2: R Programming -->
+                    <p>1. R Programming: Vector Operations<br>Which of the following code snippets correctly adds two vectors in R?</p>
+                    <label><input type="radio" name="q2" value="A"> A) v3 <- add(v1, v2)</label>
+                    <label><input type="radio" name="q2" value="B"> B) v3 <- v1 + v2</label>
+                    <label><input type="radio" name="q2" value="C"> C) v3 <- c(v1, v2)</label>
+                    <label><input type="radio" name="q2" value="D"> D) v3 <- v1 %add% v2</label>
+            
+                    <!-- Question 3: Python List Comprehension -->
+                    <p>2. Python: List Comprehension<br>What is the output of the following code?<br><code>squares = [x**2 for x in range(5)]<br>print(squares)</code></p>
+                    <label><input type="radio" name="q3" value="A"> A) [0, 1, 2, 3, 4]</label>
+                    <label><input type="radio" name="q3" value="B"> B) [1, 4, 9, 16, 25]</label>
+                    <label><input type="radio" name="q3" value="C"> C) [0, 1, 4, 9, 16]</label>
+                    <label><input type="radio" name="q3" value="D"> D) Error</label>
+            
+                    <!-- Question 4: SQL Aggregate Functions -->
+                    <p>3. SQL: Aggregate Functions<br>Which SQL query will return the average salary of employees from the employee table?</p>
+                    <label><input type="radio" name="q4" value="A"> A) SELECT salary FROM employee WHERE AVG(salary);</label>
+                    <label><input type="radio" name="q4" value="B"> B) SELECT AVG(salary) FROM employee;</label>
+                    <label><input type="radio" name="q4" value="C"> C) SELECT COUNT(salary) FROM employee;</label>
+                    <label><input type="radio" name="q4" value="D"> D) SELECT SUM(salary) FROM employee;</label>
+            
+                    <!-- Question 5: Java For Loop -->
+                    <p>4. Java: For Loop Output<br>What is the output of the following Java code?<br><code>for (int i = 0; i < 5; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (i == 3) break;<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(i + " ");<br>}</code></p>
+                    <label><input type="radio" name="q5" value="A"> A) 0 1 2 3 4</label>
+                    <label><input type="radio" name="q5" value="B"> B) 0 1 2</label>
+                    <label><input type="radio" name="q5" value="C"> C) 0 1 2 3</label>
+                    <label><input type="radio" name="q5" value="D"> D) 1 2 3 4</label>
+            
+                    <!-- Question 6: Spark RDD Transformation -->
+                    <p>5. Spark: RDD Transformation<br>Which of the following Spark transformations returns a new RDD by applying a function to each element of the original RDD?</p>
+                    <label><input type="radio" name="q6" value="A"> A) filter()</label>
+                    <label><input type="radio" name="q6" value="B"> B) reduce()</label>
+                    <label><input type="radio" name="q6" value="C"> C) map()</label>
+                    <label><input type="radio" name="q6" value="D"> D) collect()</label>
                 </form>
-                <h2>Coding Challenge</h2>
-                <p>Write a function to reverse a string.</p>
-                <textarea id="code-editor" placeholder="Enter your code here..."></textarea>
+                
                 <button id="submit-btn">Submit Exam</button>
             </section>
         </main>
