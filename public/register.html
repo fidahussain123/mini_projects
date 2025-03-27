@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Proctored Exam Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Register</h1>
+        </header>
+        <main>
+            <section class="auth-section">
+                <form action="/register" method="POST">
+                    <label>Name:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>Password:
+                        <input type="password" name="password" required>
+                    </label>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already registered? <a href="/login">Login here</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
