@@ -24,9 +24,19 @@
                     <button type="submit">Login</button>
                 </form>
                 <p>Not registered? <a href="/register">Register here</a></p>
-                <p class="status flag" style="display: <?php echo isset($_GET['error']) ? 'block' : 'none'; ?>">Invalid email or password</p>
+                <p id="error-message" class="status flag" style="display: none;">Invalid email or password</p>
             </section>
         </main>
     </div>
+    <script>
+        // Check for error query parameter and show/hide error message
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessage = document.getElementById('error-message');
+        if (urlParams.has('error')) {
+            errorMessage.style.display = 'block';
+        } else {
+            errorMessage.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
