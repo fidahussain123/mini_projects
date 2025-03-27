@@ -5,31 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proctored Exam Tool</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #eaeef1;
-        }
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        .exam {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        #submit-btn {
-            background: linear-gradient(90deg, #2ecc71, #27ae60);
-        }
-    </style>
-
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="lib/face_mesh.js"></script>
     <script src="lib/mediapipe-utils.js"></script>
 </head>
@@ -43,29 +19,29 @@
                     <li><a href="#exam">Exam</a></li>
                 </ul>
             </nav>
-
         </header>
-        <section class="proctoring">
-            <div class="video-container">
-                <video id="video" autoplay muted playsinline></video>
-                <canvas id="overlay"></canvas>
-            </div>
-            <p id="proctor-status" class="status">Initializing Webcam...</p>
-        </section>
-        <section class="exam" id="exam">
-
-            <h2>Multiple Choice Questions</h2>
-            <div class="mcq-section">
-                <p>1. What is 2 + 2?</p>
-                <label><input type="radio" name="q1" value="3"> 3</label><br>
-                <label><input type="radio" name="q1" value="4"> 4</label><br>
-                <label><input type="radio" name="q1" value="5"> 5</label>
-            </div>
-            <h2>Coding Challenge</h2>
-            <p>Write a function to reverse a string.</p>
-            <textarea id="code-editor" placeholder="Enter your code here..."></textarea>
-            <button id="submit-btn">Submit Exam</button>
-        </section>
+        <main>
+            <section class="proctoring">
+                <div class="video-container">
+                    <video id="video" autoplay muted playsinline></video>
+                    <canvas id="overlay"></canvas>
+                </div>
+                <p id="proctor-status" class="status">Initializing Webcam...</p>
+            </section>
+            <section class="exam" id="exam">
+                <h2>Multiple Choice Questions</h2>
+                <form class="mcq-section">
+                    <p>1. What is 2 + 2?</p>
+                    <label><input type="radio" name="q1" value="3"> 3</label>
+                    <label><input type="radio" name="q1" value="4"> 4</label>
+                    <label><input type="radio" name="q1" value="5"> 5</label>
+                </form>
+                <h2>Coding Challenge</h2>
+                <p>Write a function to reverse a string.</p>
+                <textarea id="code-editor" placeholder="Enter your code here..."></textarea>
+                <button id="submit-btn">Submit Exam</button>
+            </section>
+        </main>
     </div>
     <script src="client.js"></script>
 </body>
